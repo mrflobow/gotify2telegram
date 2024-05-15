@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  server:
+    image: mrflobow/gotify2telegram:latest
+    container_name: gotify2telegram
+    env_file:
+      - stack.env
+    restart: always
